@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: linear-gradient(to right, rgb(16, 16, 50),black);
+    color: aliceblue;
+    min-height: 80vh;
+    
+
+}
+
+header h1{                                  /* in home page*/
+    font-size: 28px;
+    background-color: black;
+    text-align: center;
+    height: auto;
+
+}
+
+nav ul{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  
+
+  
+}
+nav a{
+  color: white;
+  padding:10px;
+  
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74vh;
+}
+section{
+    background-color: white;
+    color: black;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+}
+section h2{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+ table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+ td{
+    padding: 10px;
+    border-bottom: 1px solid black;
+ }
+
+ .cont table a{
+  color: rgb(36, 41, 102);
+ }
+
+ .cont table a:hover{
+  color: rgb(152, 172, 41);
+ }
+
+
+a{
+  text-decoration: none;
+}
+
+ a:hover{
+    color: rgb(152, 172, 41);
+    margin: 5px;
+    transition-duration: 0.2s;
+ }
+
+ section:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    
+ }
+
+
+ .footer {
+  background: #071125;
+  color: #fff;
+  padding: 10px 0 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin: 20px;
+  max-width: 250px;
+}
+
+.footer-section h2 {
+  margin-bottom: 15px;
+  color: #f5c518;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+ 
+.footer-bottom {
+  text-align: center;
+  background: #071125;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+ 
+
