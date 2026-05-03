@@ -7,29 +7,55 @@
     <link rel="stylesheet" href="style.css">
     <style>
     .hero-section {
-        width: 100%;
-        background-color: transparent;
-        text-align: center;
-        padding: 60px 20px;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 15px;
     }
 
     .hero-section h1 {
-        display: flex;
-        justify-self:center;
-        align-items: center;
-        white-space: nowrap;
-        color: white;
-        font-size: 45px;
-        margin-bottom: 20px;
+        font-size: 28px;
+        white-space: normal;
+        margin-bottom: 15px;
     }
+
     .hero-section p {
-        display: flex;
-        justify-self:center;
-        align-items: center;
-        white-space: nowrap;
-        color: white;
-        font-size: 22px;
+        font-size: 18px;
+        white-space: normal;
     }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 24px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+}
     
 </style>
 </head>
