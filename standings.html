@@ -8,87 +8,105 @@
 
     <style>
         
-        .main-container {
-            width: 100%;
-        }
+    .main-container {
+    width: 100%;
+    padding: 10px;
+}
 
-        .groups-grid {
-            display: grid;
-            gap: 25px;
-            grid-template-columns: repeat(4, 1fr);
-        }
+.groups-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
 
+.group-card {
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px rgb(29, 29, 49) solid;
+    background-color: rgba(255, 255, 255, 0.05);
+}
 
-        .group-card {
-            
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            border: 2px rgb(29, 29, 49) solid;
-            
-        }
+.group-card:hover {
+    transform: scale(1.03);
+    transition-duration: 0.3s;
+}
 
-        .group-card:hover{
-            transform: scale(1.03);
-            transition-duration: 0.3s;
+.group-title {
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
 
-        }
+.table-header {
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0 5px 5px 5px;
+}
 
-      
+.header-team { 
+    flex: 1;
+    border-bottom: 0.5px rgb(22, 23, 77) solid;
+}
 
-        .group-title {
-            font-weight: 800;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
+.header-stat { 
+    width: 30px; 
+    text-align: center; 
+    border-bottom: 0.5px rgb(22, 23, 77) solid; 
+}
 
-        .table-header {
-            display: flex;
-            font-size: 0.75rem;
-            font-weight: bold;
-            padding: 0 5px 5px 5px;
-        }
+.team-row {
+    display: flex;
+    align-items: center;
+    padding: 8px 5px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
 
-        .header-team { flex: 1;border-bottom: 0.5px rgb(22, 23, 77) solid;}
-        .header-stat { width: 30px; text-align: center; border-bottom: 0.5px rgb(22, 23, 77) solid; }
+.team-name {
+    flex: 1;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-        .team-row {
-            display: flex;
-            align-items: center;
-            padding: 10px 8px;
-            border-radius: 6px;
-            margin-bottom: 4px;
-            font-size: 0.9rem;
-            transition: background 0.2s;
-        }
+.stat {
+    width: 30px;
+    text-align: center;
+}
 
-    
-        .team-name {
-            flex: 1;
-            padding: -5px;
-            font-weight: 500;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            text-align: left;
-        }
+.pts {
+    font-weight: bold;
+}
 
-        .stat {
-            width: 30px;
-            text-align: center;
-            font-variant-numeric: tabular-nums;
-        }
+@media (max-width: 1024px) {
+    .groups-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-        .pts {
-            font-weight: bold;
-            
-        }
-        
+@media (max-width: 768px) {
+    .groups-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .group-card {
+        width: 100%;
+    }
+
+    .main-container {
+        padding: 5px;
+    }
+}
         
     </style>
 
