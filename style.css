@@ -34,8 +34,9 @@ nav a {
     display: inline-block;
 }
 nav a:hover{
-  margin: 3px;
+  margin-right: 6px;
   transition-duration: 0.3s;
+
 }
 
 main {
@@ -73,9 +74,6 @@ td {
     border-bottom: 1px solid black;
 }
 
-.cont table a {
-    color: rgb(36, 41, 102);
-}
 
 .cont table a:hover {
     color: rgb(152, 172, 41);
